@@ -8,7 +8,9 @@
           <app-add
             (addEvt)="addApt($event)"
           ></app-add>
-          <app-search></app-search>
+          <app-search
+            (queryEvt)="searchApt($event)"  
+          ></app-search>
           <app-list 
             [aptList]="theList"
             (deleteEvt)="deleteApt($event)"
